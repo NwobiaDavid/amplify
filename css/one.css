@@ -1,0 +1,272 @@
+html {
+  overflow-x: hidden;
+}
+
+body{
+  font-family: 'Roboto Mono', monospace;
+  overflow-x: hidden;
+}
+
+#navbar {
+  background: rgba(255, 255, 255, 0.01) !important;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.navbar-nav .nav-item {
+  padding-right: 2rem;
+  margin-right: 3rem;
+}
+.logo {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 3rem;
+}
+
+
+
+@media (max-width: 575.98px) {
+  .logo {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+}
+
+
+
+.nav-item a {
+  font-family: 'Roboto Mono', monospace;
+  white-space: nowrap;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.nav-item:hover a {
+  background: rgb(37, 37, 37);
+
+  color: white;
+}
+
+/* section one */
+/* @media screen and (max-width:900px) {
+    body {
+        background: url(../images/home.webp) no-repeat;
+       
+        height: 100vh;
+          background-attachment: fixed;
+      } 
+} */
+
+.hero {
+  color: white;
+  position: absolute;
+  text-align: center;
+  width: 50rem;
+ padding: 5px;
+}
+
+.homepage {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 90vh;
+  word-break: break-all; 
+  overflow-wrap: break-word; 
+}
+.motto{
+  font-weight: 700;
+}
+@media (max-width: 575.98px) { 
+  .hero p{
+    font-size: 1rem;
+  }
+}
+
+/* section two */
+.section-two {
+  padding: 10rem;
+  text-align: center;
+ 
+}
+.section-two h1{
+  font-size: 3rem;
+  font-weight: 700;
+}
+.section-two p{
+  line-height: 2.3rem;
+}
+@media (max-width: 575.98px) { 
+  .section-two{
+   padding: 5px;
+  }
+
+  .section-two h1{
+    margin-top: 2rem;
+  }
+ }
+
+
+/* section three */
+.section-three img{
+  height: 15rem;
+  width: 24rem;
+  border-radius: 10px;
+}
+.section-three h1{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+.clo h2{
+  font-weight: 500;
+  font-size: 3rem;
+}
+.clor{
+  text-align: right;
+}
+
+.clo {
+  display: flex;
+  padding: 8rem;
+}
+
+@media (max-width: 991.98px) { 
+  .clo {
+    display: flex;
+    flex-direction: column;
+    padding: 8rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-three img{
+    margin: 0 !important;
+  }
+ }
+
+/* section-four */
+
+.car {
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+  align-items: center;
+  height: 30rem;
+}
+
+.car-img {
+  box-sizing: border-box;
+  height: 300px;
+  width: 300px;
+  clip-path: circle(50% at 50% 50%);
+  margin: 1rem;
+}
+.bx{
+  height: 36rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+#testimonials {
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.tes-title{
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+em{
+  color: white;
+}
+.testimonial-text{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 0 2rem;
+}
+.carousel-item {
+  text-align: center;
+  padding: 0;
+}
+
+/* contact section */
+/* Animation property */
+.sub {
+  animation: wiggle 5s linear infinite;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+.sub {  
+  font-size: 1em;
+  transform-origin: 50% 5em;
+}
+.contact{
+  padding: 4rem;
+  display: flex;
+  text-align: center;
+ justify-items: center;
+ justify-content:center ;
+}
+
+.cont-title{
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.form{
+  display: flex;
+  width: 30rem;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.txt{
+  resize: none;
+}
+.btn{
+  width: 10rem;
+  padding: 1rem;
+}
+
+footer li{
+  margin-left: 1.3rem;
+}
