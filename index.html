@@ -35,8 +35,17 @@
 
     <!-- linking css file -->
     <link rel="stylesheet" href="css/one.css" />
+
+    <!-- linking animation on scroll library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
   </head>
+
   <body>
+    <script>
+      AOS.init();
+    </script>
     <!-- navbar section -->
     <nav
       class="navbar navbar-expand-lg fixed-top bg-light rounded"
@@ -44,7 +53,7 @@
       id="navbar"
     >
       <div class="container-fluid d-flex justify-content-between">
-        <a class="navbar-brand logo col-lg-6 me-0" href="#">.Amplify</a>
+        <a class="navbar-brand logo col-lg-6 me-0" href="#home">.Amplify</a>
         <button
           class="navbar-toggler col-md-1 collapsed"
           type="button"
@@ -63,16 +72,16 @@
         >
           <ul class="navbar-nav d-flex">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">About Us</a>
+              <a class="nav-link" aria-current="page"  href="#about">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">What We Do</a>
+              <a class="nav-link" href="#wwd">What We Do</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Testimonial</a>
+              <a class="nav-link" href="#testimonials">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Work With Us</a>
+              <a class="nav-link" href="#conts">Work With Us</a>
             </li>
           </ul>
         </div>
@@ -80,16 +89,16 @@
     </nav>
 
     <!-- homepage section -->
-    <section class="homepage">
+    <section class="homepage" id="home">
       <img src="/images/home.webp" alt="" />
-      <div class="hero">
+      <div class="hero" data-aos="fade-up" data-aos-duration="3000">
         <h1 class="motto">Amplify</h1>
         <p>...Connecting Your Vision with the World</p>
       </div>
     </section>
 
     <!-- about us -->
-    <section class="section-two">
+    <section class="section-two" id="about" data-aos="fade-up" data-aos-duration="3000">
       <h1>ABOUT US</h1>
       <p>
         We are a dynamic marketing agency with a passion for helping businesses
@@ -103,10 +112,11 @@
     </section>
 
     <!-- What we do -->
-    <section class="section-three">
-      <h1>What we do</h1>
+    <section class="section-three" id="wwd">
 
-      <div class="clo">
+      <h1 data-aos="fade-up" data-aos-duration="3000">What we do</h1>
+
+      <div class="clo" data-aos-duration="3000" data-aos="fade-right">
         <img src="images/branding.webp" class="me-4" alt="" srcset="" />
         <div>
           <h2>Branding and design</h2>
@@ -119,7 +129,7 @@
         </div>
       </div>
 
-      <div class="clo clor">
+      <div class="clo clor" data-aos-duration="3000" data-aos="fade-left">
         <div>
           <h2>Content marketing</h2>
           <p>
@@ -139,7 +149,7 @@
         />
       </div>
 
-      <div class="clo">
+      <div class="clo" data-aos-duration="3000" data-aos="fade-right">
         <img src="images/user-research.webp" class="me-4" alt="" srcset="" />
         <div>
           <h2>User Research</h2>
@@ -152,7 +162,7 @@
         </div>
       </div>
 
-      <div class="clo clor">
+      <div class="clo clor" data-aos-duration="3000" data-aos="fade-left">
         <div>
           <h2>Social media management</h2>
           <p>
@@ -167,7 +177,7 @@
     </section>
 
     <!-- Testimonial -->
-    <section id="testimonials ">
+    <section id="testimonials" data-aos="fade-up" data-aos-duration="3000">
       <h1 class="tes-title">Testimonials</h1>
       <div
         id="carouselExampleAutoplaying"
@@ -178,20 +188,22 @@
       >
         <div class="carousel-inner bx pt-4 pb-4 bg-primary">
           
-          <div class="carousel-item active">
+          <div class="carousel-item active car-mob">
             <img class="car-img" src="images/people/a.webp" alt="dog-profile" />
             <em>Pebbles, New York</em>
             <h2 class="testimonial-text">
               I was blown away by the creativity and expertise of the team at
-              Amplify. They took the time to really understand my business and
-              its unique needs, and came up with a marketing strategy that
-              exceeded my expectations. Thanks to their hard work, I've seen a
-              significant increase in traffic and sales. I couldn't be happier
-              with the results.
+              Amplify. <span class="mobile-cut">
+                They took the time to really understand my business and
+                its unique needs, and came up with a marketing strategy that
+                exceeded my expectations. Thanks to their hard work, I've seen a
+                significant increase in traffic and sales. I couldn't be happier
+                with the results.
+              </span>
             </h2>
           </div>
 
-          <div class="carousel-item">
+          <div class="carousel-item car-mob">
             <img
               class="car-img"
               src="images/people/b.webp"
@@ -200,12 +212,12 @@
             <em>Beverly, Illinois</em>
             <h2 class="testimonial-text">
               Working with Amplify was a game-changer for my business. Their
-              attention to detail and commitment to quality is second to none.
+              attention to detail and commitment to quality is second to none.<span class="mobile-cut">
               They helped me create a brand identity that perfectly captures the
               essence of my business, and their ongoing marketing support has
               helped me reach a wider audience than I ever thought possible. I
               highly recommend Amplify to anyone looking for a marketing partner
-              that truly cares about their success.
+              that truly cares about their success.</span>
             </h2>
           </div>
         </div>
@@ -232,7 +244,7 @@
 
     <!-- contact us -->
 
-    <section class="contact">
+    <section class="contact" data-aos="flip-up" data-aos-duration="2000" id="conts">
       <form class="form">
         <h1 class="cont-title">Work With Us</h1>
         <input
@@ -261,19 +273,16 @@
       <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 ">Home</a>
+            <a href="#about" class="nav-link px-2 ">About Us</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2">Features</a>
+            <a href="#wwd" class="nav-link px-2">What We Do</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2">Pricing</a>
+            <a href="#testimonials" class="nav-link px-2">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 ">FAQs</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 ">About</a>
+            <a href="#conts" class="nav-link px-2 ">Work With Us</a>
           </li>
         </ul>
         <p class="text-center ">&copy; 2023 Amplify, Inc</p>
